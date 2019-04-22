@@ -8,8 +8,9 @@ var Reopt = require('reopt')
 var is = _.is
 var optName = name + '-option'
 var arr = [] // all elements to spy scroll
-var hasInited = false
-var $ = global.$
+var hasInited = false;
+var jQuery = require('jquery')
+var $ = jQuery ? jQuery : global.$
 
 exports.name = name
 exports.arr = arr
